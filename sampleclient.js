@@ -9,7 +9,8 @@ const destroyer = require('server-destroy');
 const fs = require('fs');
 const path = require('path');
 
-const keyPath = ("/Users/sofialeon/Downloads/client_secret_demo.json");
+#TODO: Fill out your key path 
+const keyPath = ("your-key-path");
 let keys = {
   redirect_uris: ['http://localhost:3000/oauth2callback'],
 };
