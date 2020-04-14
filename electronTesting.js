@@ -3,15 +3,8 @@ const readline = require('readline');
 const { app, BrowserWindow } = require('electron');
 
 const {google} = require('googleapis');
-const sampleClient = require('../sampleclient');
+const sampleClient = require('./sampleclient');
 
-
-
-app.on('activate', () => {
-  // On macOS it's common to re-create a window in the app when the
-  // dock icon is clicked and there are no other windows open.
- 
-})
 
 // initialize the Youtube API library
 const youtube = google.youtube({
@@ -61,15 +54,7 @@ const scopes = [
 
 app.whenReady().then(sampleClient
   .authenticate(scopes)
-  .then(() => runSample("../../Downloads/testCoverage.mp4")))
-
-
-// if (module === require.main) {
-//   const fileName = process.argv[2];
-//   sampleClient
-//     .authenticate(scopes)
-//     .then(() => runSample("../../Downloads/testCoverage.mp4"))
-//     .catch(console.error);
-// }
+   //TODO: Fill out with a sample file
+  .then(() => runSample("YOUR_SAMPLE_FILE")))
 
 
