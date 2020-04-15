@@ -96,6 +96,6 @@ function main() {
       'https://www.googleapis.com/auth/youtube.upload',
       'https://www.googleapis.com/auth/youtube',
     ])
-    .then(() => runSample(path.join((__dirname), "../../../../Downloads/testCoverage.mp4")))
+    .then(() => runSample(path.join((__dirname), "YOUR_FILE_HERE")))
     .catch(console.error);
 }
